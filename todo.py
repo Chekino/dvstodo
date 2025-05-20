@@ -41,4 +41,3 @@ def execut():
     supprimer(2)
     lister()
     
-execut()
