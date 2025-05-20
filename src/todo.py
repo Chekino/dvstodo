@@ -12,7 +12,7 @@ def lister():
         print("Aucune tâche.")
         return
     for i, t in enumerate(taches, 1):
-        status = "✅" if t["faite"] else "❌"
+        status = "faite" if t["faite"] else "non faite"
         print(f"{i}. [{status}] {t['titre']}")
 
 
@@ -32,13 +32,13 @@ def supprimer(num):
     print(f"Tâche supprimée : {supprimée['titre']}")
     
     
-def execut():
-    ajouter("Faire les courses")
-    ajouter("Réviser Python")
-    lister()
-    marquer_faite(1)
-    lister()
-    supprimer(2)
-    lister()
+#def execut():
+  #  ajouter("Faire les courses")
+  # ajouter("Réviser Python")
+  #  lister()
+  #  marquer_faite(1)
+  #  lister()
+  #  supprimer(2)
+  #  lister()
     
-execut()
+#execut()
